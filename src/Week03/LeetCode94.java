@@ -9,7 +9,7 @@ public class LeetCode94 {
 	private static final TreeNode TreeNode = null;
 
 	/**
-	 * 中序遍历二叉树，请使用非递归 如果用递归方法做，我们在处理理每个节点时，要按照 左子树 =>根节点 =>右子树的顺序进
+	 * 中序遍历二叉树，请使用非递归 如果用递归方法做，我们在处理理每个节点时，要按照 左子树 =>根节点 =>右子树的顺序进行
 	 * 进阶:递归算法很简单，是否可以使用迭代算法。
 	 */
 	public static List<Integer> inorderTraversal(TreeNode root) {
