@@ -1,5 +1,8 @@
 package Week03;
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 /**
  * 打卡活动，每周10道LeetCode算法题第98题 打卡地址：www.acwing.com
  * 
@@ -15,12 +18,10 @@ public class LeetCode98 {
 	 * search trees. Example 1: 2 / \ 1 3 Input: [2,1,3] Output: true Example 2:
 	 * 5 / \ 1 4 / \ 3 6 Input: [5,1,4,null,null,3,6] Output: false Explanation:
 	 * The root node's value is 5 but its right child's value is 4.
+	 *
+	 * Definition for a binary tree node.
 	 */
-	/**
-	 * Definition for a binary tree node. public class TreeNode { int val;
-	 * TreeNode left; TreeNode right; TreeNode(int x) { val = x; } }
-	 */
-	public class TreeNode {
+	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
@@ -32,8 +33,23 @@ public class LeetCode98 {
 
 	class Solution {
 		public boolean isValidBST(TreeNode root) {
-
-			return true;
+			double inorder = -Double.MAX_VALUE;
+			Stack<TreeNode> stack = new Stack();
+			// 判断是否为空
+			if (root == null) {
+				return true;
+			}
+			if (isValidBST(root.left)) {
+				if (inorder < root.val) {
+					return true;
+				}
+			}
+			if (isValidBST(root.right)) {
+				if (inorder > root.val) {
+					return true;
+				}
+			}
+			return false;
 		}
 	}
 
