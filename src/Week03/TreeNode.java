@@ -12,15 +12,6 @@ public class TreeNode {
 	TreeNode(int x) {
 		val = x;
 	}
-
-	public int getVal() {
-		return val;
-	}
-
-	public void setVal(int val) {
-		this.val = val;
-	}
-
 	public TreeNode getLeft() {
 		return left;
 	}
