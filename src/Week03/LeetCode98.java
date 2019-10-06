@@ -1,11 +1,10 @@
-package Week03;
+package week03;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Stack;
 
+
 /**
- * ´ò¿¨»î¶¯£¬Ã¿ÖÜ10µÀLeetCodeËã·¨ÌâµÚ98Ìâ ´ò¿¨µØÖ·£ºwww.acwing.com
+ * æ‰“å¡æ´»åŠ¨ï¼Œæ¯å‘¨10é“LeetCodeç®—æ³•é¢˜ç¬¬98é¢˜ æ‰“å¡åœ°å€ï¼šwww.acwing.com
  * 
  * @author lenovo Jul 24, 2019
  */
@@ -18,7 +17,7 @@ public class LeetCode98 {
 	 * than the node's key. Both the left and right subtrees must also be binary
 	 * search trees. Example 1: 2 / \ 1 3 Input: [2,1,3] Output: true Example 2:
 	 * 5 / \ 1 4 / \ 3 6 Input: [5,1,4,null,null,3,6] Output: false Explanation:
-	 * The root node's value is 5 but its right child's value is 4. ÑéÖ¤¶ş²æÊ÷
+	 * The root node's value is 5 but its right child's value is 4. éªŒè¯äºŒå‰æ ‘
 	 * Definition for a binary tree node.
 	 */
 	// public static class TreeNode {
@@ -32,7 +31,7 @@ public class LeetCode98 {
 	// }
 	public boolean isValidBST(TreeNode root) {
 		// double inorder = -Double.MAX_VALUE;
-		// // ÅĞ¶ÏÊÇ·ñÎª¿Õ
+		// // åˆ¤æ–­æ˜¯å¦ä¸ºç©º
 		// if (root == null) {
 		// return true;
 		// }

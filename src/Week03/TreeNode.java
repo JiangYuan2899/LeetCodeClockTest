@@ -1,8 +1,9 @@
-package Week03;
+package week03;
+
 /**
- * ÑùÀýÊ÷
+ * æ ·ä¾‹æ ‘
  * @author lenovo
- * Jul 24, 2019
+ * Oct 6, 2019
  */
 public class TreeNode {
 	int val;

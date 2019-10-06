@@ -1,16 +1,6 @@
-package Week03;
-
-import java.util.Stack;
+package week03;
 
 
-/**
- * 判断是否是镜像二叉树
- * 题解1群主yxc给出思路：栈模拟递归，左子树采用中序遍历，右子树采用反中序遍历，当且仅当同时遍历2棵子树对应节点的值相等时为镜像二叉树。
- * 题解2：LeetCode灵魂画师牧码，画解算法提供解题思路：
- * 递归结束条件：1.都为空指针则返回true；2.只有一个为空则返回false
- * 递归过程：判断两个指针当前节点是否相等；判断A的右子树与B的左子树是否相等，判断A的左子树与B的右子树是否相等
- * 下面代码采用题解2
- */
 public class LeetCode101 {
 	public boolean isSymmetric(TreeNode root) {
 		return isMirror(root,root);
